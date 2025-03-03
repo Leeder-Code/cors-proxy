@@ -1,0 +1,16 @@
+{
+  "name": "ts-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsup src/**/* --minify",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "tsup": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}

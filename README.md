@@ -1,15 +1,14 @@
-# CORS Proxy Server (TypeScript)
+# CORS Proxy Server
 
 A simple proxy server built with Express and `http-proxy-middleware` to bypass CORS restrictions.  
 It also includes an IP whitelist for security.
 
-## 🚀 Features
-- ✅ **Bypass CORS** restrictions for any URL.
-- ✅ **IP Whitelist** to allow only specific clients.
-- ✅ **Custom User-Agent** to mimic browser requests.
-- ✅ **Lightweight and easy to deploy**.
+## Features
+- **Bypass CORS** restrictions for any URL.
+- **IP Whitelist** to allow only specific clients.
+- **Custom User-Agent** to mimic browser requests.
 
-## 📦 Installation
+## Installation
 
 1. Clone the repository:
    ```sh
@@ -28,7 +27,7 @@ It also includes an IP whitelist for security.
    ALLOWED_IPS=0.0.0.0
    ```
 
-## 🚀 Usage
+## Usage
 
 Run the server:
 ```sh
@@ -41,7 +40,7 @@ Send a request:
 http://localhost:3000/?url=https://jsonplaceholder.typicode.com/todos/1
 ```
 
-## 🔒 Security
+## Security
 
 The server only accepts requests from **whitelisted IPs**.  
 Modify the `ALLOWED_IPS` array in `.env` to include your IPs:
